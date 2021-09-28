@@ -3,7 +3,7 @@
 
 int main()
 {
-    int a , b;
+    double a , b;
     char muvjel;
     printf("Kerem a muveletet: \n");
 
@@ -11,19 +11,19 @@ int main()
 
     printf("Kerem a szamokat: \n");
 
-    scanf("%d , %d", &a, &b);
+    scanf("%lf , %lf", &a, &b);
 
 
 
 
     switch (muvjel){
-        case '+': printf("%d+%d=%d",a,b,a+b);break;
+        case '+': printf("%lf+%lf=%lf",a,b,a+b);break;
 
-        case '-': printf("%d-%d=%d",a,b,a-b);break;
+        case '-': printf("%lf-%lf=%lf",a,b,a-b);break;
 
-        case '*': printf("%d*%d=%d",a,b,a*b);break;
+        case '*': printf("%lf*%lf=%lf",a,b,a*b);break;
 
-        case '/': printf("%d%%d=%d",a,b,a/b);break;
+        case '/': printf("%.lf/%.lf=%lf",a,b,a/b);break;
 
         default:  printf("Error!");
 
@@ -31,3 +31,4 @@ int main()
 
     return 0;
 }
+
