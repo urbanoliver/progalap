@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a , b;
+    char muvjel;
+    printf("Kerem a muveletet: \n");
+
+    scanf("%c", &muvjel);
+
+    printf("Kerem a szamokat: \n");
+
+    scanf("%d , %d", &a, &b);
+
+
+
+
+    switch (muvjel){
+        case '+': printf("%d+%d=%d",a,b,a+b);break;
+
+        case '-': printf("%d-%d=%d",a,b,a-b);break;
+
+        case '*': printf("%d*%d=%d",a,b,a*b);break;
+
+        case '/': printf("%d%%d=%d",a,b,a/b);break;
+
+        default:  printf("Error!");
+
+    }
+
+    return 0;
+}
