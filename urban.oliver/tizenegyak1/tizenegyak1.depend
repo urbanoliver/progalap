@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1637076294 source:c:\urban.oliver\tizenegyak1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
