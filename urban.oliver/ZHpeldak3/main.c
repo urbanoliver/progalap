@@ -3,7 +3,7 @@
 #include <time.h>
 int tomb_feltolt(char *abc);
 void ismetlodik_e(char *abc);
-char beolvas_char(char betu);
+char beolvas_char();
 int megszamol (char *abc,char betu);
 
 int main()
@@ -12,8 +12,7 @@ int main()
     char betu;
     tomb_feltolt(abc);
     ismetlodik_e(abc);
-    beolvas_char(betu);
-    megszamol(abc,betu);
+    betu=beolvas_char();
     printf("\nA betu %d-szor van benne a sorban",megszamol(abc,betu));
 
     return 0;
@@ -43,7 +42,7 @@ void ismetlodik_e(char *abc){
 
     return;
 }
-char beolvas_char(char betu){
+char beolvas_char(){
     int ok;
     do{
         printf("\nAdjon meg egy betut!");
@@ -53,7 +52,7 @@ char beolvas_char(char betu){
 
     }while(!ok);
 
-    return;
+    return betu;
 }
 int megszamol(char *abc,char betu){
     int db=0;
